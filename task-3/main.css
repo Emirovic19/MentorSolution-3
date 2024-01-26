@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --main-bg: hsl(47, 88%, 63%);
+  --cont-bg: hsl(0, 0%, 100%);
+
+  --clr-header: hsl(0, 0%, 7%);
+  --clr-text: hsla(0, 0%, 50%, 0.701);
+
+  --ff: "Figtree", sans-serif;
+  --fw-600: 600;
+  --fw-800: 800;
+
+  --fs-p: 16px;
+
+  --cont-brd: 1px solid black;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: var(--main-bg);
+}
+main {
+  background-color: var(--cont-bg);
+  border: var(--cont-brd);
+  max-width: 330px;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+article {
+  margin: 25px;
+}
+.wrapper-image {
+  max-width: 290px;
+  height: 180px;
+  overflow: hidden;
+  background-image: url("task-3/illustration-article(jpeg)1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+.info {
+  margin-top: 20px;
+}
+.info__tag {
+  background-color: var(--main-bg);
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: var(--fw-800);
+  letter-spacing: -1px;
+  color: var(--clr-header);
+}
+.info__date {
+  display: inline-block;
+  font-size: var(--fs-p);
+  letter-spacing: -1px;
+}
+.description h1 {
+  font-weight: var(--fw-800);
+  font-size: 24px;
+  letter-spacing: -1px;
+  margin: 0;
+  color: var(--clr-header);
+}
+.description__text {
+  color: var(--clr-text);
+  font-size: var(--fs-p);
+  letter-spacing: -1px;
+  line-height: 22px;
+  font-weight: var(--fw-600);
+}
+.profile {
+  display: flex;
+  gap: 15px;
+}
+.profile__avatar {
+  max-width: 40px;
+  display: flex;
+  align-items: center;
+}
+.profile__avatar img {
+  max-width: 100%;
+}
+.profile__name {
+  font-weight: var(--fw-800);
+}
+@media only screen and (min-width: 376px) {
+  main {
+    max-width: 380px;
+  }
+  article {
+    max-width: 100%;
+  }
+  .wrapper-image {
+    max-width: 100%;
+    background-image: url("task-3/illustration-article(jpeg).jpg");
+  }
+  .info {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .info__tag {
+    padding: 5px 10px;
+  }
+  .description h1 {
+    letter-spacing: 0px;
+    font-size: 24px;
+  }
+  .description__text {
+    letter-spacing: 0px;
+  }
+}
