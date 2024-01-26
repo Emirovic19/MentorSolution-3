@@ -45,7 +45,7 @@ article {
   max-width: 290px;
   height: 180px;
   overflow: hidden;
-  background-image: url('task-3/illustration-article(jpeg)1.jpg');
+  background-image: url('illustration-article(jpeg)1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -105,7 +105,7 @@ article {
   }
   .wrapper-image {
     max-width: 100%;
-    background-image: url('task-3/illustration-article(jpeg).jpg');
+    background-image: url('illustration-article(jpeg).jpg');
   }
   .info {
     margin-top: 20px;
