@@ -73,6 +73,10 @@ article {
   letter-spacing: -1px;
   margin: 0;
   color: var(--clr-header);
+  cursor: pointer;
+}
+.description h1:active {
+  color: var(--main-bg);
 }
 .description__text {
   color: var(--clr-text);
